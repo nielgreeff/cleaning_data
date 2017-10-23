@@ -18,6 +18,9 @@ Each has and X dataset of measurements taken by mobile phone GPS during 6 differ
 
 ## New Data Sets
 "big_clean" is a dataset combining test and training and adding the activities (names - not numbers) and dupclicate columns removed. (for example fBodyAccJerk-bandsEnergy()-1,8  - column 382 and 396 and 410)
+"mean_sd_data_set" is a dataset containing just those columns with "mean" and "std" and more readable column names
+"tidy_means" is a dataset with the mean values per Subject per activity
+
 
 ## Code Explanation
 The code assumes that the git repository will be used to download the code.
