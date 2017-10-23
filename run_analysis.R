@@ -72,8 +72,6 @@ download_data <- function() {
 ########################################################
 read_merge_data <- function() {
   
-  # read the activities
-  #activities <- read_activities()
   
   # read the column names
   #column_names <- read_column_names()
@@ -195,14 +193,11 @@ run_analysis <- function() {
   # create data set with average for each subject and activity
   
   
-  # we have named our columns "Subject" and "Activity", and added it to the front 
-  # of the columns (columns 1 and 2) of our big data set, so we need to use that to sort the data
-  #setnames(mean_sd_data_set, c('subjects_merged','activities'), c('Subjects','Activities'))
+  # group the data as per the instructions
   tidy_data <- group_by(mean_sd_data_set,Subjects,Activities)
   
  
   # calculate the means over the grouped data
-  #tidy_means <- summarize_each(tidy_data,funs(mean))
   tidy_means <- summarize_all(tidy_data,funs(mean))
   
   # and write this out to anohter file
