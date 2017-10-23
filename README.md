@@ -17,9 +17,11 @@ Each has and X dataset of measurements taken by mobile phone GPS during 6 differ
 
 
 ## New Data Sets
-"big_clean" is a dataset combining test and training and adding the activities (names - not numbers) and dupclicate columns removed. (for example fBodyAccJerk-bandsEnergy()-1,8  - column 382 and 396 and 410)
-"mean_sd_data_set" is a dataset containing just those columns with "mean" and "std" and more readable column names
-"tidy_means" is a dataset with the mean values per Subject per activity
+###big_clean 
+is a dataset combining test and training and adding the activities (names - not numbers) and dupclicate columns removed. (for example fBodyAccJerk-bandsEnergy()-1,8  - column 382 and 396 and 410)
+###mean_sd_data_set 
+is a dataset containing just those columns with "mean" and "std" and more readable column names
+###tidy_means is a dataset with the mean values per Subject per activity
 
 
 ## Code Explanation
@@ -49,6 +51,9 @@ Lastly we group the data by subjects and activities
 
 and calculate the mean (average) over the data and store in in a variable "tidy_means"
 and write this out to a file as well
+
+Please note that most systems are Windows, so this will download the code asif this platform is Windows.
+If you're using Linux / Mac OS , please change the line downloading the data (line 56) todownload.file(fileURL, filename, method="curl") 
 
 
 
